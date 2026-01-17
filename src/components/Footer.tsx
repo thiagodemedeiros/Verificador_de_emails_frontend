@@ -9,18 +9,18 @@ export default function Footer() {
                 <div className='Footer_itens_informacoes_lista'>
                     <h5>Páginas</h5>
                     <div className='Footer_itens_informacoes_lista_itens'>
-                        <Link to={"/Verificador_de_emails_frontend"}>Início</Link>
-                        <Link to={"/Verificador_de_emails_frontend/sobre"}>Sobre</Link>
+                        <Link to={"/"}>Início</Link>
+                        <Link to={"/sobre"}>Sobre</Link>
                     </div>
                 </div>
                 <div className='Footer_itens_informacoes_lista'>
                     <h5>Informações</h5>
                     <div className='Footer_itens_informacoes_lista_itens'>
-                        <a href="">Repositório</a>
+                        <a href="/git">Repositório</a>
                     </div>
                 </div>
             </div>
-            <img src={logo} alt="Logo do site" />
+            <Link to={"/"}><img src={logo} alt="Logo do site" /></Link>
         </div>
     </footer>)
 }

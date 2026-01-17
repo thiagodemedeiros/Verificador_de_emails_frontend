@@ -5,9 +5,9 @@ import './index.css'
 import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
-  <BrowserRouter basename='/Verificador_de_emails_frontend'>
-    <StrictMode>
+  <StrictMode>
+    <BrowserRouter basename='/Verificador_de_emails_frontend'>
       <App />
-    </StrictMode>
-  </BrowserRouter>
+    </BrowserRouter>
+  </StrictMode>
 )
