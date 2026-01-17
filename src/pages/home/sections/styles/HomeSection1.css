@@ -100,6 +100,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .mensagem_email_foi_verificado {
@@ -129,6 +139,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    animation: fadeOut 1s ease forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
 .HomeSection1_inputs_itens_classificacao {
