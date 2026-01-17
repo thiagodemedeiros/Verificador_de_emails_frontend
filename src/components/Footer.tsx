@@ -1,5 +1,6 @@
 import './styles/Footer.css'
 import logo from '/logo.svg'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
     return(<footer className='Footer'>
@@ -8,8 +9,8 @@ export default function Footer() {
                 <div className='Footer_itens_informacoes_lista'>
                     <h5>Páginas</h5>
                     <div className='Footer_itens_informacoes_lista_itens'>
-                        <a href="">Início</a>
-                        <a href="/sobre">Sobre</a>
+                        <Link to={"/Verificador_de_emails_frontend"}>Início</Link>
+                        <Link to={"/Verificador_de_emails_frontend/sobre"}>Sobre</Link>
                     </div>
                 </div>
                 <div className='Footer_itens_informacoes_lista'>

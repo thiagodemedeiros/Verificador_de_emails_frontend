@@ -1,14 +1,18 @@
-import Footer from "./components/Footer"
-import Header from "./components/Header"
 import Home from "./pages/home/Home"
+import { Route, Routes} from "react-router-dom"
+import Layout from "./Layout"
+import Sobre from "./pages/sobre/Sobre"
 
 
 function App() {
   return (
     <>
-      <Header/>
-      <Home/>
-      <Footer/>
+      <Routes>
+        <Route path="Verificador_de_emails_frontend" element={<Layout/>}>
+          <Route index element={<Home/>}/>
+          <Route path="sobre" element={<Sobre/>}/>
+        </Route>
+      </Routes>
     </>
   )
 }

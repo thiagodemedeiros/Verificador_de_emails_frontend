@@ -6,7 +6,7 @@ export default function Header() {
         <div className='Header_itens'>
             <img src={logo} alt="Logo do site" />
             <div className='Header_itens_paginas'>
-                <a href="">Início</a>
+                <a href="/sobre">Início</a>
                 <a href="/sobre">Sobre</a>
             </div>
         </div>
