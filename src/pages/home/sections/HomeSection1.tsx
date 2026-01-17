@@ -24,7 +24,7 @@ export default function HomeSection1() {
                 headers: {
                 "Content-Type": "application/json",
                 },
-                body: JSON.stringify({ 'email' : email }),
+                body: JSON.stringify({ email }),
             }
         );
 
