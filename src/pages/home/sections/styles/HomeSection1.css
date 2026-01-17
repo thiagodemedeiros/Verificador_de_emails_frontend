@@ -139,14 +139,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation: fadeOut 5s ease forwards;
+    animation: fadeOut 10s ease forwards;
 }
 
 @keyframes fadeOut {
-    from {
+    0% {
         opacity: 1;
     }
-    to {
+    90% {
+        opacity: 1;
+    }
+    100% {
         opacity: 0;
     }
 }
