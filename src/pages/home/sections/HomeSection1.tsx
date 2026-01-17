@@ -24,7 +24,7 @@ export default function HomeSection1() {
                 headers: {
                 "Content-Type": "application/json",
                 },
-                body: JSON.stringify({ email }),
+                body: JSON.stringify({ 'email' : email}),
             }
         );
 
@@ -34,6 +34,7 @@ export default function HomeSection1() {
 
         const data: VerificacaoEmailResponse = await response.json();
 
+        console.log(data)
         console.log(data.classificacao_do_email);
         setClassificacaoDoEmail(data.classificacao_do_email);
         console.log(data.justificativa);
