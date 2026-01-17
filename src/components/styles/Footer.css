@@ -22,6 +22,7 @@
 
 .Footer_itens img{
     width: 200px;
+    filter: brightness(0) invert(0.95);
 }
 
 .Footer_itens_informacoes {
