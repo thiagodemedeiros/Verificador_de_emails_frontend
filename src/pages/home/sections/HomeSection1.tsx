@@ -23,6 +23,8 @@ export default function HomeSection1() {
     async function verificarEmail(email : string) {
         setRespostaApi("aguardando");
         setEmailCopiado("Clique aqui, e copia a resposta");
+        setClassificacaoDoEmail("O sistema está analisando...");
+        setSugestao("Sua sugestão de resposta esta sendo processada...");
 
         const response = await fetch(
             "https://web-production-bed1.up.railway.app/verificar_email",
