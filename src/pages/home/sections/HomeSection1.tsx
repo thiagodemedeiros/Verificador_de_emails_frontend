@@ -14,6 +14,10 @@ export default function HomeSection1() {
     const [email, setEmail] = useState<string>("");
     const [respostaApi, setRespostaApi] = useState("");
 
+    const copiarParaClipboard = async () => {
+        await navigator.clipboard.writeText(sugestao);
+    };
+
     async function verificarEmail(email : string) {
         setRespostaApi("aguardando");
 
@@ -85,7 +89,7 @@ export default function HomeSection1() {
                 <h3>Sugestão de resposta</h3>
                 <div className='HomeSection1_inputs_itens_sugestao_resposta'>
                     <p>{sugestao}</p>
-                    <button>Clique aqui, e copia a resposta</button>
+                    <button onClick={copiarParaClipboard}>Clique aqui, e copia a resposta</button>
                 </div>
             </div>
         </div>
